@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{%block content%}
+  <div class="container-fluid">
+	<div class="row">
+	  <div class="container-fluid">
+		{%for post in posts%}
+			{% if post.description == None %}
+				{{continue }}
+			{% else %}
+				<div class="content-section">
+					<img src="{{post.urlToImage}}" class="img-fluid">
+					<div class="container-fluid">
+						<p class="article-title font-weight-bold"><a href="{{post.url}}" target="_blank">{{post.title}}</a></p>
+						<p class="article-content md-2">{{post.description}}</p>
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+	  </div>
+	 <div class="container-fluid">
+		{%for ppost in pposts%}
+			{% if ppost.description == None %}
+				{{continue}}
+			{% else %}
+			<div class="content-section">
+				   <img src="{{ppost.urlToImage}}" class="img-fluid">
+				<div class="container-fluid">
+					<p class="font-weight-bold"><a href="{{ppost.url}}" target="_blank">{{ppost.title}}</a></p>
+					<p class="article-content">{{ppost.description}}</p>
+				</div>
+			</div>
+			{% endif %}
+		{% endfor %}
+	  </div>
+	</div>
+  </div>
+{%endblock content%}

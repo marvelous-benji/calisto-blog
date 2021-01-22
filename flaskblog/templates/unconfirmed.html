@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="container-fluid text-center ml-5">
+		<h1>Hello, {{current_user.username}}!</h1>
+		<h2>You have not confirmed your account yet</h2>
+		<p>Before you can access this website, you need to confirm your account.Check your inbox,
+			you should have received an email confirmation link
+		</p>
+		<p>Need another confirmation message? <a href="{{url_for('resend_confirmation')}}">Click Here</a></p>
+   </div>
+{% endblock content%}
