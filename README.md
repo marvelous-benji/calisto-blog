@@ -1,6 +1,4 @@
-# Project Title
-
-Calisto Blog
+# Calisto Blog
 
 ## Description
 
