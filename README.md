@@ -1,4 +1,5 @@
 # Calisto Blog
+A simple blog
 
 ## Description
 
