@@ -22,7 +22,7 @@ set MYKEY={your secret key}
 ### Dependencies
 
 * Python3, flask, pillow, request, Gmail, NewsAPI, HTML, Bootstrap3
-* ex. Linux
+* platform: Linux
 
 
 ### Executing program
