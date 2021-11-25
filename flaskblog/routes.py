@@ -13,6 +13,7 @@ from threading import Thread
 
 
 def	news_headlines():
+	# Left api key for convienience sake for anyone who intends to run the project, otherwise it's bad practice.
 	r = requests.get('http://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=ff22b7a71bb34dac9df5571c99f7c961')
 	rq = requests.get('http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=ff22b7a71bb34dac9df5571c99f7c961')
 	jdata = r.json()
